@@ -16,12 +16,11 @@ const FormContainer = () => {
 
 function App() {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={LOGO} className="App-logo" alt="logo" />
+		<div className="flex flex-col">
+			<header>
+				<img src={LOGO} alt="logo" />
 				<p>{HEADER}</p>
 				<a
-					className="RHF-link"
 					href="https://react-hook-form.com/get-started"
 					target="_blank"
 					rel="noopener noreferrer"
