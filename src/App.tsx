@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
-import { Form } from "react-hook-form";
+
+import "./style.css";
 
 const HEADER = "HOOKED";
 const HEADER_ANCHOR = "Learn React Hook Form";
@@ -8,9 +9,7 @@ const LOGO = "https://avatars.githubusercontent.com/u/53986236?s=280&v=4";
 const FormContainer = () => {
 	return (
 		<Box>
-			<Form>
-				<p className="text-3xl">I'm form</p>
-			</Form>
+			<p className="text-3xl">I'm form</p>
 		</Box>
 	);
 };
