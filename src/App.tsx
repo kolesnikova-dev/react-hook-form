@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className="flex flex-col">
 			<header>
-				<img src={LOGO} alt="logo" />
+				<img src={LOGO} alt="logo" className="mb-4" />
 				<p>{HEADER}</p>
 				<a
 					href="https://react-hook-form.com/get-started"
