@@ -1,4 +1,8 @@
 import type { FieldError } from "react-hook-form";
+import type * as CONSTANTS from "./constants";
+
+type Constants = typeof CONSTANTS;
+type InputNames = Constants[keyof Constants];
 
 export interface StyledInputProps
 	extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -7,8 +11,7 @@ export interface StyledInputProps
 }
 
 export type FormInputs = {
-	fund: string;
-	type: string;
+	[K in InputNames]?: string;
 };
 
 interface ValidationRule {
@@ -24,7 +27,7 @@ interface ValidationRule {
 }
 
 interface InputConfig {
-	name: "fund" | "type";
+	name: InputNames;
 	validation: ValidationRule;
 }
 
